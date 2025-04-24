@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Тест з ключовим словом</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #e3f2fd; /* світло-блакитний фон */
+    padding: 20px;
+    color: #0d47a1; /* глибокий синій текст */
+  }
+  .quiz-container {
+    background: #ffffff;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.2); /* синюватий тіньовий акцент */
+    border: 2px solid #bbdefb;
+  }
+  h1 {
+    text-align: center;
+    color: #1565c0;
+  }
+  .question {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-left: 5px solid #64b5f6;
+    background-color: #f1f8ff;
+    border-radius: 5px;
+  }
+  .question p {
+    font-weight: bold;
+    color: #0d47a1;
+  }
+  label {
+    display: block;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    cursor: pointer;
+  }
+  input[type="radio"] {
+    margin-right: 8px;
+  }
+  button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: #42a5f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background 0.3s;
+  }
+  button:hover {
+    background: #1e88e5;
+  }
+  #result {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    color: #0d47a1;
+  }
+</style>
+
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>От і фінальтний челендж</h1>
+
+    <!-- Приклад: Перше питання — правильна відповідь містить "І" -->
+    <div class="question">
+      <p>1. У хворого після проведеного оперативного втручання раптово розвинулися тетанічні судоми дистальних відділів кінцівок (”рука акушера”), спостерігаються явища брохоспазму. Яка невідкладна терапія необхідна?</p>
+      <label><input type="radio" name="q1" value="У"> А) Введення сибазону</label>
+      <label><input type="radio" name="q1" value="Е"> Б) Введення розчину сульфату магнію</label>
+      <label><input type="radio" name="q1" value="О"> В) Введення розчину калію хлориду</label>
+      <label><input type="radio" name="q1" value="І"> Г) Введення розчину кальцію хлориду</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q1" value="Ї"> Д) Введення розчину фуросеміду</label>
+    </div>
+
+    <div class="question">
+      <p>2. У 50-річного чоловіка протягом 2-х днів відзначаються рідкі випорожнення чорного кольору. Болю у епігастральній ділянці немає. При огляді: блідість шкірних покривів і кон’юнктиви, ”судинні зірочки” на шкірі грудей, розширення вен передньої стінки живота, гепатомегалія. Артеріальний тиск - 105/60 мм рт.ст. Промивні води шлунка типу ”кавової гущі”. Лікар визначив кровотечу з вен стравоходу. Які препарати разом з трансфузійною та гемостатичною терапією слід призначити в першу чергу?</p>
+      <label><input type="radio" name="q2" value="Т"> А) Аргініну глутамат</label>
+      <label><input type="radio" name="q2" value="С"> Б) Тіотриазолін</label>
+      <label><input type="radio" name="q2" value="М"> В) Метоклопрамід</label>
+      <label><input type="radio" name="q2" value="Г"> Г) Вазопресин</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q2" value="К"> Д) Алюмінію гідроокис</label>
+    </div>
+
+    <div class="question">
+      <p>3. У приймальне відділення лікарні ургентно доставлений хворий 19-ти років. Під час обстеження спостерігаються багаторазові повторні генералізовані тонікоклонічні судомні напади, непритомний, піна з рота, шкіра сірувато-білого кольору, на лобі підшкірна гематома 1х2 см, частота серцевих скорочень - 120/хв., коливання артеріального тиску від 130/80 до 170/100 мм рт.ст. При неврологічному обстеженні: зіниці на світло не реагують, погляд не фокусує, патологічні рефлекси нижніх кінцівок. Який стан у хворого?</p>
+      <label><input type="radio" name="q3" value="Д"> А) Гостре порушення мозкового кровообігу</label>
+      <label><input type="radio" name="q3" value="М"> Б) Правець</label>
+      <label><input type="radio" name="q3" value="Р"> В) Епілептичний статус</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q3" value="С"> Г) Менінгіт</label>
+      <label><input type="radio" name="q3" value="Н"> Д) Делірій</label>
+    </div>
+
+    <div class="question">
+      <p>4. У жінки, яка хворієна дифузну форму токсичного зоба, після психоемоційного стресу погіршився стан. З’явилися скарги на сильний головний біль, серцебиття. Об’єктивно: психічне та моторне збудження, профузний піт, шкірні покриви гіперемовані, фебрильна температура, частота серцевих скорочень - 150/хв., артеріальний тиск - 150/50 мм рт.ст. Яке ускладнення розвинулося у пацієнтки?</p>
+      <label><input type="radio" name="q4" value="О"> А) Тиреотоксичний криз</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q4" value="Е"> Б) Адреналовий криз</label>
+      <label><input type="radio" name="q4" value="А"> В) Гострий гіперпаратиреоз</label>
+      <label><input type="radio" name="q4" value="Ї"> Г) Пароксизм миготливої тахіаритмії</label>
+      <label><input type="radio" name="q4" value="И"> Д) Мікседематозна кома</label>
+    </div>
+
+    <div class="question">
+      <p>5. Хворий 45-ти років страждаєна хронічну надниркову недостатність внаслідок туберкульозу наднирників. Під час відпочинку після тривалого перебування на сонці у нього посилилася загальна слабкість, тахікардія досягла 150/хв., артеріальний тиск знизився до 70/20 мм рт.ст., з’явилися олігурія, адинамія, нудота, блювання, біль у животі, депресія. Який діагноз найбільш імовірний у даного хворого?</p>
+      <label><input type="radio" name="q5" value="Д"> А) Гостра серцева недостатність</label> 
+      <label><input type="radio" name="q5" value="Н"> Б) Сонячний удар</label>
+      <label><input type="radio" name="q5" value="В"> В) Гостра надниркова недостатність</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q5" value="Я"> Г) Гостра ниркова недостатність</label>
+      <label><input type="radio" name="q5" value="І"> Д) Гостра печінкова недостатність</label>
+    </div>
+
+    <div class="question">
+      <p>6. В кваpтиpі з неспpавним пічним опаленням сусідами була знайдена непритомна самотня людина похилого віку. Пpи огляді: шкіpні покpиви яскpаво-чеpвоного кольоpу, свідомість відсутня, судоми, гіпеpтеpмія до 38°C, інспіpатоpна задишка, тахікаpдія, артеріальний тиск - 170/80 мм рт.ст. Який стан найбільш імовірний?</p>
+      <label><input type="radio" name="q6" value="О"> А) Тепловий удар</label> 
+      <label><input type="radio" name="q6" value="Ж"> Б) Епілептичний напад</label>
+      <label><input type="radio" name="q6" value="Л"> В) Гостра серцева недостатність</label>
+      <label><input type="radio" name="q6" value="Й"> Г) Геморагічний інсульт</label>
+      <label><input type="radio" name="q6" value="А"> Д) Отpуєння чадним газом</label> <!-- Це коментар в HTML -->
+    </div>
+
+    <div class="question">
+      <p>7. Пацієнт 64-х років, що перебуває у стаціонарі з приводу гострого інфаркту міокарда, раптово знепритомнів. При огляді діагностовані зупинка серцевої діяльності та дихання, розпочато серцево-легеневу реанімацію. На ЕКГ шлуночкова тахікардія. Який захід єнеобхідним далі?</p>
+      <label><input type="radio" name="q7" value="З"> А) Ввести внутрішньовенно кальцію хлорид</label> 
+      <label><input type="radio" name="q7" value="П"> Б) Дефібриляція</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q7" value="О"> В) Ввести внутрішньосерцево атропін</label>
+      <label><input type="radio" name="q7" value="С"> Г) Ввести внутрішньосерцево адреналін</label>
+      <label><input type="radio" name="q7" value="Е"> Д) Ввести внутрішньовенно магнію сульфат</label>
+    </div>
+
+    <div class="question">
+      <p>8. У хворої 25-ти років, яка надійшла до приймального відділення лікарні швидкої медичної допомоги з приводу гострої ниркової недостатності, виникла зупинка роботи серця. Яка найбільш ймовірна причина зумовила такий стан?</p>
+      <label><input type="radio" name="q8" value="Я"> А) Уремія</label> 
+      <label><input type="radio" name="q8" value="О"> Б) Гіперкаліємія</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q8" value="У"> В) Гіпокаліємія</label>
+      <label><input type="radio" name="q8" value="Н"> Г) Ацидоз</label>
+      <label><input type="radio" name="q8" value="Г"> Д) Гіперфосфатемія</label>
+    </div>
+
+    <div class="question">
+      <p>9. Хворий 32-х років тривожний, напружений, періодично до чогось прислухається, придивляється. Iнструкції персоналу не виконує, збуджений. Зі слів родичів, зловживаєспиртними напоями протягом 10-ти років. Захворів на 3-й день після останнього прийому алкоголю. Який вид порушення свідомості у хворого?</p>
+      <label><input type="radio" name="q9" value="В"> А) Алкогольний делірій</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q9" value="П"> Б) Iстеричний делірій</label>
+      <label><input type="radio" name="q9" value="Щ"> В) Епілептичний делірій</label>
+      <label><input type="radio" name="q9" value="Р"> Г) Шизофренічний делірій</label>
+      <label><input type="radio" name="q9" value="Ш"> Д) Органічний делірій</label>
+    </div>
+
+    <div class="question">
+      <p>10. У хворого 55-ти років впродовж 2-х місяців спостерігалася сеча червоного кольору, схуд на 5 кг. В загальному аналізі крові: еритроцити - 3, 7×10^12/л, Нb- 100 г/л, кольоровий показник - 0,9, лейкоцити - 4, 5·10^9/л, швидкість осідання еритроцитів - 45 мм/год. В загальному аналізі сечі: білок - 0,165 г/л, лейкоцити - 3-4 в п/з, еритроцити - 10-15 в п/з. На УЗД нирок: розміри правої нирки - 150x80 мм, в паренхімі спостерігається гіпоехогенна зона 20 мм в діаметрі, без чітких контурів. Яке обстеження необхідно провести для уточнення діагнозу?</p>
+      <label><input type="radio" name="q10" value="Д"> А) Проба Реберга-Тареєва</label> 
+      <label><input type="radio" name="q10" value="Ю"> Б) Хромоцистоскопія</label>
+      <label><input type="radio" name="q10" value="П"> В) Проба з водним навантаженням</label>
+      <label><input type="radio" name="q10" value="Е"> Г) Комп’ютерна томографія</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q10" value="Ч"> Д) Оглядова урографія</label>
+    </div>
+
+    <div class="question">
+      <p>11. Хворий 65-ти років, який страждаєна цукровий діабет II типу, перебуваєу непритомному стані. Об’єктивно: шкіра і видимі слизові оболонки сухі, тургор шкіри знижений, очні яблука м’які, запалі, артеріальний тиск - 90/50 мм рт.ст., пульс - частий, ниткоподібний. Дихання - часте, поверхневе. Температура тіла підвищена. Визначаються патологічні сухожильні рефлекси. Глюкоза плазми крові - 45 ммоль/л, концентрація натрію в плазмі - 160 ммоль/л. Сечовиділення порушене - олігоурія. Ваш попередній діагноз:</p>
+      <label><input type="radio" name="q11" value="Н"> А) Уремічна кома</label> 
+      <label><input type="radio" name="q11" value="Ц"> Б) Кетоацидотична кома</label>
+      <label><input type="radio" name="q11" value="Р"> В) Гіперосмолярна кома</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q11" value="О"> Г) Мозкова кома</label>
+      <label><input type="radio" name="q11" value="Е"> Д) Лактацидемічна кома</label>
+    </div>
+
+    <div class="question">
+      <p>12. До амбулаторії сімейного лікаря доставлений хворий зі скаргами на нудоту, блювання, пронос, біль у животі, миготіння метеликів та наявність сітки перед очима, подвоєння перед очима оточуючих предметів. З анамнезу відомо, що 3 години тому вживав алкогольні напої. При огляді: хворий загальмований, не реагуєна больові подразники, шкірні покриви та видимі слизові оболонки сухі, тотальний ціаноз, мідріаз, пригнічення фотореакції, частота серцевих скорочень - 120/хв., артеріальний тиск - 140/90 мм рт.ст. Чим отруївся хворий?</p>
+      <label><input type="radio" name="q12" value="Х"> А) Метиловий спирт</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q12" value="Д"> Б) Етиленгліколь</label>
+      <label><input type="radio" name="q12" value="Ч"> В) Ацетон</label>
+      <label><input type="radio" name="q12" value="Л"> Г) Оцтова кислота</label>
+      <label><input type="radio" name="q12" value="Г"> Д) Етиловий спирт</label>
+    </div>
+
+    <div class="question">
+      <p>13. У хворого 43-х років, якого було госпіталізовано у гастроентерологічне відділення з діагнозом ”цироз печінки з портальною гіпертензією III ступеня”, після проведеного форсованого діурезу з’явилися ознаки печінкової енцефалопатії III ступеня. Призначення яких препаратів повинно бути першочерговим?</p>
+      <label><input type="radio" name="q13" value="Т"> А) Гепатопротектори</label> 
+      <label><input type="radio" name="q13" value="К"> Б) Iнгібітори протеаз</label>
+      <label><input type="radio" name="q13" value="Ф"> В) Діуретики</label>
+      <label><input type="radio" name="q13" value="Н"> Г) Лактулоза</label> <!-- Це коментар в HTML -->
+      <label><input type="radio" name="q13" value="З"> Д) Iнсулін</label>
+    </div>
+
+    <div class="question">
+      <p>14. У хворого 49-ти років, що знаходиться в стаціонарі з приводу гострого інфаркту міокарда, раптово виникла зупинка серцевої діяльності та дихання. Почато серцеволегеневу реанімацію. Наступним необхідним кроком є:</p>
+      <label><input type="radio" name="q14" value="А"> А) Визначення рівня глюкози крові</label> 
+      <label><input type="radio" name="q14" value="Є"> Б) Визначення рівня калію крові</label>
+      <label><input type="radio" name="q14" value="Ї"> В) Реєстрація електроенцефалограми</label>
+      <label><input type="radio" name="q14" value="Ю"> Г) Визначення рН крові</label>
+      <label><input type="radio" name="q14" value="Я"> Д) Оцінка ЕКГ-ритму</label> <!-- Це коментар в HTML -->
+    </div>
+
+    <button onclick="checkAnswers()">Перевірити</button>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    function checkAnswers() {
+      const correct = ['І','Г','Р','О','В','А','П','О','В','Е','Р','Х','Н','Я'];
+      let resultWord = '';
+      let allCorrect = true;
+
+      for (let i = 1; i <= 14; i++) {
+        const q = document.getElementsByName('q' + i);
+        let answered = false;
+        for (let opt of q) {
+          if (opt.checked) {
+            resultWord += opt.value;
+            if (opt.value !== correct[i - 1]) {
+              allCorrect = false;
+            }
+            answered = true;
+          }
+        }
+        if (!answered) {
+          document.getElementById('result').textContent = `Будь ласка, дайте відповіді на всі питання.`;
+          return;
+        }
+      }
+
+      document.getElementById('result').textContent =
+        allCorrect
+        ? `Молодчинка! Ти справилась: "${resultWord}".`
+        : `Шото пішло не так: "${resultWord}". Спробуй ще раз!`;
+    }
+  </script>
+</body>
+</html>
