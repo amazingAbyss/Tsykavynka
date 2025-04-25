@@ -67,6 +67,13 @@
     font-size: 20px;
     color: #0d47a1;
   }
+  #result-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin-top: 10px;
+}
 </style>
 
 </head>
@@ -203,6 +210,7 @@
 
     <button onclick="checkAnswers()">Перевірити</button>
     <div id="result"></div>
+    <div id="result-image" style="text-align:center; margin-top: 20px;"></div>
   </div>
 
   <script>
