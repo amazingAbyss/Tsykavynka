@@ -207,33 +207,42 @@
 
   <script>
     function checkAnswers() {
-      const correct = ['І','Г','Р','О','В','А','П','О','В','Е','Р','Х','Н','Я'];
-      let resultWord = '';
-      let allCorrect = true;
+  const correct = ['І','Г','Р','О','В','А','П','О','В','Е','Р','Х','Н','Я'];
+  let resultWord = '';
+  let allCorrect = true;
 
-      for (let i = 1; i <= 14; i++) {
-        const q = document.getElementsByName('q' + i);
-        let answered = false;
-        for (let opt of q) {
-          if (opt.checked) {
-            resultWord += opt.value;
-            if (opt.value !== correct[i - 1]) {
-              allCorrect = false;
-            }
-            answered = true;
-          }
+  for (let i = 1; i <= 14; i++) {
+    const q = document.getElementsByName('q' + i);
+    let answered = false;
+
+    for (let opt of q) {
+      if (opt.checked) {
+        resultWord += opt.value;
+        if (opt.value !== correct[i - 1]) {
+          allCorrect = false;
         }
-        if (!answered) {
-          document.getElementById('result').textContent = `Будь ласка, дайте відповіді на всі питання.`;
-          return;
-        }
+        answered = true;
       }
-
-      document.getElementById('result').textContent =
-        allCorrect
-        ? `Молодчинка! Ти справилась: "${resultWord}".`
-        : `Шото пішло не так: "${resultWord}". Спробуй ще раз!`;
     }
+
+    if (!answered) {
+      document.getElementById('result').textContent = `Будь ласка, дайте відповіді на всі питання.`;
+      document.getElementById('result-image').innerHTML = '';
+      return;
+    }
+  }
+
+  const resultDiv = document.getElementById('result');
+  const imageDiv = document.getElementById('result-image');
+
+  if (allCorrect) {
+    resultDiv.textContent = `Молодчинка! Ти склала слово: "${resultWord}"`;
+    imageDiv.innerHTML = `<img src="https://raw.githubusercontent.com/amazingAbyss/medical-quiz/refs/heads/main/%D0%97%D0%BD%D1%96%D0%BC%D0%BE%D0%BA%20%D0%B5%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202025-04-25%20115446.png" alt="Правильно" width="200">`;
+  } else {
+    resultDiv.textContent = `Шось не те: "${resultWord}". Спробуй ще раз!`;
+    imageDiv.innerHTML = `<img src="https://raw.githubusercontent.com/amazingAbyss/medical-quiz/refs/heads/main/0d9d4b32-ff5d-4e2f-a2d0-e4a89223dab4.jpg" alt="Неправильно" width="200">`;
+  }
+}
   </script>
 </body>
 </html>
